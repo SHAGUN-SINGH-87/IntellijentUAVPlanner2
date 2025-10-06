@@ -20,7 +20,7 @@ public class MissionController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String FLASK_URL = "https://uav-ml-service.onrender.com/predict-path";
+    private static final String FLASK_URL = "http://localhost:5000/predict-path";
 
     @PostMapping
     public ResponseEntity<?>createMission(@RequestBody Mission mission){
